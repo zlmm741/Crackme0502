@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             Method method = anno.getMethod("outputInfo", (Class[])null);
             if (method.isAnnotationPresent(MyAnnoMethod.class)) {
                 MyAnnoMethod myMethod = method.getAnnotation(MyAnnoMethod.class);
-                String str = myMethod.name() + "is" + myMethod.age() + "years old.";
+                String str = myMethod.name() + " is " + myMethod.age() + " years old.";
                 Toast.makeText(this,
                         str,
                         Toast.LENGTH_SHORT).show();
